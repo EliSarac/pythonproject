@@ -4,4 +4,3 @@ transformers
 streamlit
 pytube
 whisper
-os
