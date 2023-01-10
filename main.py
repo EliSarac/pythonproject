@@ -2,11 +2,9 @@ import streamlit as st
 import whisper
 from pytube import YouTube
 from transformers import pipeline
-from youtube_transcript_api import YouTubeTranscriptApi
-
 import os
-import re
 
+@st.cache(allow_output_mutation=True)
 def load_whisper():
     whisper_model = whisper.load_model("base")
     return whisper_model
